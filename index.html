@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nicolas Gómez</title>
+    <link rel=" href="./img/logo/logotipo-white.svg">
+    <!--===== Normalize =====-->
+    <link rel="stylesheet" href="./css/normalize.css">
+    <!--===== CSS =====-->
+    <link rel="stylesheet" href="./css/style.css">
+    <!--===== Unicons =====-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+</head>
+<body>
+    <header class="header" id="inicio">
+        <nav class="header__nav nav flex" id="nav">
+            <a href=""><img src="./img/logo/logotipo.svg" alt="logotipo" class="nav__logo" id="logo"></a>
+            <ul class="nav__links flex">
+                <li>
+                    <a href="#inicio" class="nav__link">
+                        <i class="uil uil-estate nav__icon"></i>
+                        <span class="link__nombre">Inicio</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#sobre-mi" class="nav__link">
+                        <i class="uil uil-user nav__icon"></i>
+                        <span class="link__nombre">Sobre Mi</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#habilidades" class="nav__link">
+                        <i class="uil uil-airplay nav__icon"></i>
+                        <span class="link__nombre">Habilidades</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#portafolio" class="nav__link">
+                        <i class="uil uil-briefcase-alt nav__icon"></i>
+                        <span class="link__nombre">Portafolio</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#contacto" class="nav__link">
+                        <i class="uil uil-envelope-add nav__icon"></i>
+                        <span class="link__nombre">Contacto</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main class="main flex">
+        
+        <section class="main__inicio inicio seccion flex">
+
+            <div class="inicio__presentacion presentacion flex">
+
+                <div class="presentacion__textos">
+                    <h1 class="presentacion__titulo">Hola! soy Nicolás Gómez</h1>
+                    <h2 class="presentacion__subtitulo">Front-end developer</h2>
+                </div>
+                
+                <div class="presentacion__redes redes flex">
+                    <a href="https://www.instagram.com/gmznico_/" target="_blank" class="redes__iconos">
+                        <i class="uil uil-instagram redes__icono"></i>
+                    </a>
+                    <a href="https://www.facebook.com/Niko.Gomez17/" target="_blank" class="redes__iconos">
+                        <i class="uil uil-facebook-f redes__icono"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/nicolás-gómez-285098230/" target="_blank" class="redes__iconos">
+                        <i class="uil uil-linkedin-alt redes__icono"></i>
+                    </a>
+                </div>
+
+            </div>
+
+            <img class="inicio__foto" src="./img/Perfil/foto-uno.png" alt="perfil nicolas gomez"> 
+
+        </section>
+
+
+        <section class="main__sobremi sobremi seccion" id="sobre-mi">
+            <div class="sobremi__introduccion introduccion">
+                <h3 class="introduccion__titulo">Sobre mi</h3>
+                <h4 class="introduccion__subtitulo">Introducción</h4>
+            </div>
+            <div class="sobremi__sobremi flex">
+                <img class="sobremi__foto img" id="objeto" src="./img/Perfil/foto-dos.jpg" alt="nicolas gomez">
+                <p class="sobremi__texto">
+                    Tengo 19 años y me considero <span class="span">desarollador y diseñador</span> web, cuento con muchos conocimientos en varias técnologias. Aprendí por mi cuenta, me esfuerzo por aprender más siendo <span class="span">autodidacta.</span>
+                </p>
+                <a class="sobremi__boton boton" download="cv-nicolas-gomez" href="./cv.pdf">Descargar CV</a>
+            </div>
+        </section>
+
+
+        <section class="main__habilidades habilidades seccion" id="habilidades">
+            <h3 class="habilidades__titulo">Habilidades</h3>
+            <h4 class="habilidades__subtitulo">Técnologias</h4>
+            <div class="habilidad__contenedor">
+                <div class="habilidad">
+                    <h4 class="habilidad__titulo">Diseñador</h4>
+                    <ul class="habilidad__lista">
+                        <li>Figma</li>
+                        <li>Photoshop</li>
+                        <li>Illustrator</li>
+                    </ul>
+                </div>
+                <div class="habilidad">
+                    <h4 class="habilidad__titulo">Frontend</h4>
+                    <ul class="habilidad__lista">
+                        <li>Html</li>
+                        <li>Css</li>
+                        <li>Javascript</li>
+                        <li>Bootstrap</li>
+                        <li>Sass</li>
+                    </ul>
+                </div>
+                <div class="habilidad">
+                    <h4 class="habilidad__titulo">Backend</h4>
+                    <ul class="habilidad__lista">
+                        <li>Php</li>
+                        <li>Sql</li>
+                        <li>Mysql</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="main__portafolio portafolio seccion" id="portafolio">
+
+            <div class="portafolio_textos">
+                <h3 class="portafolio__titulo">Portafolio</h3>
+                <h4 class="portafolio__subtitulo">Mis proyectos</h4>
+            </div>
+
+            <div class="portafolio__card flex"> 
+                <div class="card flex">
+                    <img src="./img/portafolio/mi-web.png" alt="img" class="card__img">
+                    <div class="card__textos">
+                        <h4 class="card__title">Mi página web</h4>
+                        <p class="card__texto">Fue diseñada en Figma y desarrollada con html,css y javascript .</p>
+                    </div>
+                    <a href="" class="card__boton boton">Visitar</a>
+                </div>
+
+                <!-- <div class="card flex">
+                    <img src="./img/portafolio/mi-web.png" alt="img" class="card__img">
+                    <div class="card__textos">
+                        <h4 class="card__title">Mi página web</h4>
+                        <p class="card__texto">Fue diseñada en Figma y desarrollada con html,css y javascript .</p>
+                    </div>
+                    <a href="" class="card__boton boton">Visitar</a>
+                </div> -->
+
+            </div>      
+        </section>
+
+        <secction class="main_contactame contactame flex">
+            <div class="contactame__textos flex">
+                <h2 class="contactame__texto">¿Necesitas ayuda con algún proyecto?</h2>
+                <a href="#contacto" class="contactame__boton boton">Contactame</a>
+            </div>
+            <img src="./img/Perfil/foto-tres.png" class="contactame__img" alt="foto nicolas gomez">
+        </secction>
+
+
+        <section class="main__contacto seccion" id="contacto">
+
+            <h3 class="contacto__titulo">Contacto</h3>
+            <h4 class="contacto__subtitulo">Pongase en contacto</h4>
+
+            <div class="contacto__contactos contactos flex">
+
+                <a href="https://wtsi.me/543454932791" class="contacto__link" target="_blank">
+                    <div class="contactos_contacto contacto flex">
+                        <h2 class="contacto__titulo">
+                            <i class="uil uil-phone icono"></i>
+                            WhatsApp
+                        </h2>
+                        <p class="contacto__parrafo">+54 345 4932791</p>
+                    </div>
+                </a>
+                
+                <a href="mailto:gomeznico.g8@gmail.com" class="contacto__link" target="_blank">
+                    <div class="contactos_contacto contacto flex">
+                        <h2 class="contacto__titulo">
+                            <i class="uil uil-envelope-add icono"></i>
+                            Gmail
+                        </h2>
+                        <p class="contacto__parrafo">gomeznico.g8@gmail.com</p>
+                    </div>
+                </a>
+                <a href="https://goo.gl/maps/oNQvMcc6cBinqEvW8" class="contacto__link" target="_blank">
+                    <div class="contactos_contacto contacto flex">
+                        <h2 class="contacto__titulo">
+                            <i class="uil uil-map-marker icono"></i>
+                            Localización
+                        </h2>
+                        <p class="contacto__parrafo">Argentina, Entre Rios</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+        <div class="main__botones">
+            <a href="#inicio" class="boton__especial boton__especial-subir"><i class="uil uil-angle-double-up"></i></a>
+            <!-- <a class="boton__especial boton__especial-dark" id="btn-dark"><i class="uil uil-moon"></i></a> -->
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer__nav nav flex">
+            <ul class="footer__nav-links">
+                <li><a class="footer__nav-link" href="#inicio">Inicio</a></li>
+                <li><a class="footer__nav-link" href="#sobre-mi">Sobre mi</a></li>
+                <li><a class="footer__nav-link" href="#habilidades">Habilidades</a></li>
+                <li><a class="footer__nav-link" href="#portafolio">Portafolio</a></li>
+                <li><a class="footer__nav-link" href="#contacto">Contacto</a></li>
+            </ul>
+            <img src="./img/logo/logotipo-white.svg" class="footer__nav-logo" alt="">
+        </div>
+            <p class="footer__copyright">© NicoGMZ. All right reserved</p>
+    </footer>
+    <script src="./js/main.js"></script>
+</body>
+</html> 

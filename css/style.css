@@ -1,0 +1,589 @@
+/*=== Google Fonts===*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+/* Variables */
+:root {
+    /*=== Color principal===*/
+    --color: 1; 
+
+    /*=== Variables de color ===*/
+    --color-primario: hsl(var(--color), 70%, 60%);
+    --color-primario-claro: hsl(var(--color), 45%, 85%);
+    --color-primario-oscuro: hsl(var(--color), 83%, 15%);
+    --color-nav:hsl(var(--color), 10%, 80%);
+    --color-body: hsl(var(--color), 100%, 99%);
+    --color-titulo: #3C3C3B;
+    --color-texto: #797977;
+    --color-blanco:#fff;
+    --color-negro:#3C3C3B;
+    
+    /*=== Fuente ===*/
+    --body-font: 'Poppins', sans-serif;
+
+    /*========== Fuentes tamaños ==========*/
+    --font-regular: 400;
+    --font-medium: 500;
+    --font-bold: 700;
+
+    /*========== Nivel Habilidad ==========*/
+    --experto:100%;
+    --avanzado:80%;
+    --intermedio:50%;
+    --principiante:30%;
+}
+
+/* Globales */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+
+body {
+    font-family: var(--body-font);
+    background-color: var(--color-body);
+    color: var(--color-texto);
+}
+
+h1, h2, h3, h4 {
+    color: var(--color-titulo);
+    font-weight: var(--font-regular);
+    line-height: 3.3rem;
+    letter-spacing: 0.15rem;
+    margin: 0;
+}
+
+h1{
+    font-size: 3rem;
+}
+
+h2{
+    font-size: 1.5rem;
+    font-weight: var(--font-regular);
+}
+
+h3{
+    color: var(--color-titulo);
+    font-size: 2.4rem;
+    font-weight: var(--font-bold);
+    text-align: center;
+}
+
+h4{
+    color: var(--color-texto);
+    font-size: 1.5rem;
+    font-weight: var(--font-regular);
+    text-align: center;
+}
+
+p{
+    font-size: 1.4rem;
+    font-weight: var(--font-regular);
+    line-height: 2.3rem;
+    letter-spacing: 0.1rem;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.img {
+    max-width: 70%;
+    width: 70%;
+    display: block;
+}
+
+.span{
+    color: var(--color-primario);
+}
+
+.boton{
+    background-color: var(--color-primario);
+    font-weight: var(--font-bold);
+    color: var(--color-blanco);
+    font-size: 1.7rem;
+    padding: 1.3rem;
+    border-radius: 1rem;
+}
+
+.boton:hover{
+    background-color: var(--color-primario-oscuro);
+}
+
+/*=== Utilidades ===*/
+
+.seccion{
+    max-width: 900px;
+    width: 100%;
+    padding: 2rem 3rem 3rem 3rem;
+    margin: 1rem auto;
+}
+
+.grid{
+    display: grid;
+    gap: 1rem;
+}
+
+.flex{
+    display: flex;
+    gap: 1rem;
+}
+
+.texto-regular{
+    font-size: 15rem;
+    font-weight: var(--font-regular);
+} 
+
+.texto-medium{
+    font-size: 1.1rem;
+    font-weight: var(--font-medium);
+} 
+
+.texto-bold{
+    font-size: 20px;
+    font-weight: var(--font-bold);
+}
+
+.link__nombre{
+    display: none;
+}
+
+.nivel-front{
+    display: none;
+    background-color: var(--color-primario);
+    height: 0.6rem;
+    border-radius: 5px;
+}
+
+.nivel-back{
+    width: 100%;
+    margin: 0 auto;
+    background-color: var(--color-primario-claro);
+    height: 0.6rem;
+    border-radius: 5px;
+}
+
+.icono{
+    color: var(--color-primario);
+}
+
+/*========== Header ==========*/
+/*========== Nav ==========*/
+.nav{
+    /* background-color: var(--color-nav); */
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    padding: 1rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav__logo{
+    width: 4rem;
+    padding-top: 10px;
+}
+
+.nav__links{
+    gap: 1rem;
+    align-items: center;
+}
+
+.nav__link{
+    font-size: 2.5rem;
+    color: var(--color-negro);
+}
+
+.nav__link:hover{
+    color: var(--color-primario-oscuro);
+}
+
+.nav__img{
+    padding-top: 0.3rem;
+    width: 2.5rem;
+}
+
+
+.mostrar{
+    transform: translate(-600px);
+}
+
+/*========== Main ==========*/
+.main{
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*---------- Inicio -------------*/
+
+.inicio{
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 5rem;
+}
+
+.presentacion{
+    flex-direction: column;
+}
+
+.presentacion__textos{
+    padding-top: 1rem;
+    max-width: 50vh;
+}
+
+.presentacion__subtitulo{
+    color: var(--color-texto);
+}
+
+.redes{
+    justify-content: start;
+    align-items: center;
+}
+
+.redes__iconos{
+    padding: 0 1rem;
+}
+
+.redes__icono{
+    color: var(--color-blanco);
+    background-color: var(--color-primario);
+    font-size: 2rem;
+    padding: 0 0.35rem;
+    border-radius: 50%;
+}
+
+.redes__icono:hover{
+    background-color: var(--color-primario-oscuro);
+}
+
+.inicio__foto{
+    padding-top: 1.2rem;
+    background-color: var(--color-primario);
+    border-radius: 120px 30px 30px 30px;
+    opacity: 1;
+    transition: all .8s;
+    transform: translateY(-100);
+    animation: animacion1 3s;
+}
+
+@keyframes animacion1 {
+    0%{
+        opacity: 0.2;
+    }
+    100%{
+        
+        opacity: 1;
+    }
+}
+
+
+/*---------- Sobre mi -------------*/
+.introduccion{
+    text-align: center;
+}
+
+.sobremi__sobremi{
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.sobremi__texto{
+    width: 70%;
+}
+
+.sobremi__foto{
+    border-radius: 1rem;
+    opacity: 0;
+    transition: all 1.2s;
+}
+
+
+/*---------- Habilidadaes -------------*/
+.habilidad__contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: .5rem;
+}
+.habilidad{
+    border: 1px solid var(--color-primario);
+    border-radius: 1rem;
+    margin-top: .2rem;
+    width: 13rem;
+    height: 17rem;
+}
+.habilidad__titulo{
+    border-radius: 1rem 1rem 0 0;
+    background-color: var(--color-primario);
+    color: var(--color-blanco);
+    width: 100%;
+    font-size: 1.3rem;
+}
+.habilidad__lista{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:1rem;
+}
+
+.habilidad__lista li{
+    font-size: 1.2rem;
+}
+
+/*---------- Portafolio -------------*/
+
+.portafolio__card{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card{
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    width: 20rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.card__img{
+    width: 100%;
+    max-width: 80%;
+    max-height: 15rem;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.card__title{
+    font-size: 1.5rem;
+    font-weight: var(--font-bold);
+}
+
+.card__texto{
+    text-align: center;
+    font-size: 1rem;
+}
+
+/*---------- Contactame -------------*/
+.contactame{
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: var(--color-primario);
+    gap: 0;
+}
+
+.contactame__textos{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contactame__texto{
+    color: var(--color-blanco);
+    font-size: 3rem;
+    padding: 1rem;
+}
+
+.contactame__boton{
+    color: var(--color-primario);
+    background-color: var(--color-blanco);
+}
+
+.contactame__boton:hover{
+    color: var(--color-blanco);
+}
+
+.contactame__img{
+    width: 15rem;
+    max-width: 40%;
+    display: block;
+}
+
+/*---------- Contacto ----------*/
+
+.contactos{
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+}
+
+.contacto{
+    background-color: hsl(var(--color), 40%, 94%);
+    border-radius: 1rem;
+    width: 25rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    position: relative;
+}
+
+.contacto:hover{
+    transform: scale(1.03);
+}
+
+.contacto::after{
+    content: "";
+    display:block;
+    background-color: var(--color-primario);
+    border-radius: 0 0 1rem 1rem;
+    opacity: 0.2;
+    width: 100%;
+    height: 10px;
+    position: absolute;
+    bottom: 0;
+}
+
+.contacto__parrafo{
+    color: var(--color-texto);
+    padding-bottom: 0.5rem;
+}
+
+/*========== Botones especiales ==========*/
+
+.boton__especial{
+    border: 1px solid var(--color-blanco);
+    padding: 0 .3rem;
+    border-radius: 50%;
+    background-color: var(--color-primario);
+    color: var(--color-blanco);
+    font-size: 3rem;
+    position: fixed;
+}
+
+.boton__especial:hover{
+    background-color: var(--color-primario-oscuro);
+}
+
+.boton__especial-subir{
+    bottom: 2rem;
+    right: .5rem;
+}
+
+.boton__especial-dark{
+    bottom: 2rem;
+    right: .5rem;
+    margin-bottom: 4.5rem;
+    cursor: pointer;
+}
+
+/*========== Footer ==========*/
+
+.footer{
+    width: 100%;
+    background-color: var(--color-primario);
+}
+
+.footer__nav{
+    padding-top: 1rem;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer__nav-link{
+    font-size: 2rem;
+    color: var(--color-blanco);
+}
+
+.footer__nav-link:hover{
+    color: var(--color-primario-oscuro);
+}
+
+.footer__nav-logo{
+    width: 100%;
+    max-width: 30%;
+}
+
+.footer__copyright{
+    color: var(--color-blanco);
+    text-align: center;
+    padding: 1rem;
+    background-color: hsl(var(--color), 60%, 55%);
+}
+
+
+/*========== Font Responsive ==========*/
+
+@media screen and (max-width: 510px)  {
+    html{
+        font-size: 12px;
+    }
+}
+
+/*========== Media Query´s ==========*/
+
+
+@media screen and (min-width: 711px)  {
+    /*========== Header ==========*/
+    /*========== Nav ==========*/
+    .nav__menu-on{
+        display: none;
+    }
+    .nav__menu-off{
+        display: none;
+    }
+    .nav__icon{
+        display: none;
+    }
+    .link__nombre{
+        font-size: 1.5rem;
+        display: block;
+    }
+    .link__nombre:hover{
+        color: var(--color-primario-oscuro);
+    }
+}
+
+@media screen and (max-width:661px )  {
+    .contactame{
+        justify-content: center;
+    }
+    .contactame__texto{
+        font-size: 2rem;
+    }
+} 
+
+/*========== Animaciones ==========*/
+/*========== Nav ==========*/
+.link__nombre::after{
+    content: "";
+    display: block;
+    background-color: var(--color-primario-oscuro);
+    width: 0;
+    height: 0.3rem;
+}
+
+.link__nombre:hover::after{
+    transition: all 180ms;
+    width: 60%;
+}
+
+/*======= Globales =======*/
+
+.transform_up{transform: translateX(-100%);}
+.aparece{opacity: 1; transform: none;}
+
+
+/*======== Dark Mode ========*/
+
+.dark{
+    background-color: var(--color-primario-oscuro);
+    color: var(--color-blanco);
+}
